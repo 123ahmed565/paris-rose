@@ -430,3 +430,52 @@ word-break: break-all;
     border-radius: 50%;
 }
 /* end header canvas */
+
+/* start footer */
+.footer-image {
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/footer/Group\ 4282@2x.png");
+}
+
+.footer-image .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.footer ul li:first-child{
+    color: var(--colorText);
+}
+
+.footer ul li:hover{
+    color: var(--colorText);
+}
+
+@media (max-width:768px) {
+    .footer-image .overlay{
+        text-align: center;
+    }
+    .footer-image{
+        height: 1000px !important;
+    }
+}
+/* end footer */
+
+/* start bottom footer */
+.bottom-footer{
+    background-color: var(--colorText);
+    position: relative;
+}
+/* end bottom footer */
