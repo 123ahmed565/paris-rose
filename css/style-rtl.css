@@ -21,7 +21,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
 
@@ -232,7 +232,10 @@ input[type=submit]:hover {
     }
 }
 .top-head{
-background-color: var(--primary);
+    background-image: url("../images/top-head/Group\ 4284.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .search-box{
@@ -471,6 +474,71 @@ word-break: break-all;
     border-radius: 50%;
 }
 /* end header canvas */
+
+
+/* start about */
+.about-image {
+    height: auto !important;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/about-us/about-bg.png");
+}
+
+.about span{
+    color: var(--colorText);
+}
+
+.about p{
+    color: #c2bcbc;
+    line-height: 25px;
+    max-width: 700px;
+}
+@media (max-width:768px) {
+    .about img{
+    width: 300px;
+    height: 400px;
+    }
+}
+/* end about */
+
+/* start offers */
+.offer-card{
+    background-color: #c6d2cb;
+}
+
+.offer-card:hover{
+    background-color: var(--colorText);
+    color: #231F20;
+    transition: .3s all ease-in-out;
+}
+
+.offer-card:hover span{
+    color: #231F20 !important;
+    transition: .3s all ease-in-out;
+}
+
+.offer-card .card-text span{
+    color: var(--colorText);
+}
+
+.offer-card p{
+    font-size: 18px;
+    font-weight: 700;
+    color: #231F20;
+}
+
+.offer-card a{
+font-size: 13px;
+font-weight: 600;
+}
+
+.offer-card img{
+    width: 100%;
+    height: 300px;
+}
+/* end offers */
 
 /* start recently veiwed */
 .recently-viewed .swiper{
