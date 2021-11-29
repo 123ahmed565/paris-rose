@@ -536,6 +536,131 @@ font-weight: 600;
 }
 /* end offers */
 
+/* start nav tab */
+.tab-content {
+    padding: 20px;
+    border-top: 1px solid #F0F2F7;
+}
+.tab-content .nav-link {
+    margin-right: 2px !important;
+    padding: 2px 40px !important;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    background-color: #F0F2F7 !important;
+    padding: 5px 30px;
+    margin-right: 2px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #fff !important;
+}
+
+.box-shadow{
+    position: relative;
+}
+
+@media (max-width:768px) {
+    .box-shadow{
+        position: relative;
+    }
+    .box-shadow .middle {
+        display: none;
+    }
+    .box-shadow:hover .image {
+        opacity: 1 !important;
+    }
+    .box-shadow .icons-mobile{
+        position: absolute;
+        top: 0% !important;
+        left: 73%;
+    }
+    .box-shadow  .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: 150px !important;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .button-cart-mobile{
+        display: block;
+    }
+    .tab-content {
+        padding: 0px !important;
+        border-top: 1px solid #F0F2F7;
+    }
+}
+
+@media (min-width:768px) {
+    .button-cart-mobile{
+        display: none;
+    }
+}
+
+.box-shadow  .image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 200px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.box-shadow .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.box-shadow:hover .image {
+    opacity: 0.3;
+}
+
+.box-shadow:hover .middle {
+    opacity: 1;
+}
+
+
+.box-shadow .icons .add-to-cart{
+    background-color: #231F20;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.box-shadow .icons .add-to-heart{
+    background-color: #231F20;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.box-shadow .icons-mobile .add-to-heart{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: white !important;
+}
+/* end nav tab */
+
+
+
 /* start best price */
 .best-image {
     height: auto;
