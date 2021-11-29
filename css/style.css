@@ -536,6 +536,49 @@ font-weight: 600;
 }
 /* end offers */
 
+/* start best price */
+.best-image {
+    height: auto;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/best-price/Group\ 4286.png");
+}
+
+.best-price-box{
+margin-top: 100px;
+}
+
+.best-price-box span{
+    color: var(--colorText);
+    font-weight: 400;
+}
+
+.best-price-box p{
+font-weight: 500;
+font-size: 18px;
+}
+
+.best-price-box h2{
+    letter-spacing: 2px;
+}
+
+.best-price-box button{
+    color: black;
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .best-image {
+        height: auto;
+    }
+    .best-price-box{
+        margin-top: 10px;
+    }
+}
+/* end best price */
+
 
 /* start recently veiwed */
 .recently-viewed .swiper-slide img {
