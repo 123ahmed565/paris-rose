@@ -83,6 +83,14 @@ $(".deleted").click(function () {
     toastr.success("Delete Done");
 });
 
+$(".add-to-cart").click(function () {
+    toastr.success("Add To Cart");
+});
+
+$(".add-to-heart").click(function () {
+    toastr.success("Add To Wishlest");
+});
+
 
 
 // increase and decrease number in canvas menu for product
