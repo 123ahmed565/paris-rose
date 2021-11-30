@@ -142,7 +142,7 @@
     <!-- end top head -->
 
     <!-- start header canvas -->
-    <nav class="navbar navbar-expand-sm shadow-sm bg-white">
+    <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top">
         <div class="container">
 
             <div class="row for-mobile">
@@ -256,10 +256,10 @@
                                     <i class="fas fa-long-arrow-alt-right text-white m-2"></i>
                                 </button>
                                 <div class="col mt-1 button-float-2">
-                                    <i class="fas fa-angle-left m-2 arrows-bacground" data-bs-target="#carouselExampleCaptions"
-                                        data-bs-slide="prev"></i>
-                                    <i class="fas fa-angle-right m-2 arrows-bacground" data-bs-target="#carouselExampleCaptions"
-                                        data-bs-slide="next"></i>
+                                    <i class="fas fa-angle-left m-2 arrows-bacground"
+                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></i>
+                                    <i class="fas fa-angle-right m-2 arrows-bacground"
+                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></i>
                                 </div>
                             </div>
                         </div>
@@ -277,10 +277,10 @@
                                     <i class="fas fa-long-arrow-alt-right text-white m-2"></i>
                                 </button>
                                 <div class="col mt-1 button-float-2">
-                                    <i class="fas fa-angle-left m-2 arrows-bacground" data-bs-target="#carouselExampleCaptions"
-                                        data-bs-slide="prev"></i>
-                                    <i class="fas fa-angle-right m-2 arrows-bacground" data-bs-target="#carouselExampleCaptions"
-                                        data-bs-slide="next"></i>
+                                    <i class="fas fa-angle-left m-2 arrows-bacground"
+                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></i>
+                                    <i class="fas fa-angle-right m-2 arrows-bacground"
+                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></i>
                                 </div>
                             </div>
                         </div>
@@ -397,8 +397,8 @@
                         <div class="row">
                             <div class="col-6 col-md-4">
                                 <div class="box-shadow shadow-sm mt-3 mt-md-2">
-                                    <a href="./category-detail.html">
-                                        <div class="card border-0 h-100" style="width: 100%;">
+                                    <div class="card border-0 h-100" style="width: 100%;">
+                                        <a href="./category-detail.html">
                                             <img src="./images/product-recently/product image -1.png"
                                                 class="card-img-top p-1 image " loading="lazy"
                                                 alt="image Related category">
@@ -421,15 +421,18 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn rounded-0 button-cart-mobile">
-                                                <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
-                                            </button>
-                                        </div>
-                                    </a>
+                                        </a>
+                                        <button class="btn rounded-0 button-cart-mobile" data-bs-toggle="offcanvas"
+                                            data-bs-target="#cart-demo-canvas">
+                                            <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
+                                        </button>
+                                    </div>
+
                                     <div class="middle">
                                         <div class="icons">
                                             <div class=" add-to-cart m-2">
-                                                <i class="fa fa-cart-plus"></i>
+                                                <i class="fa fa-cart-plus" data-bs-toggle="offcanvas"
+                                                    data-bs-target="#cart-demo-canvas"></i>
                                             </div>
                                             <div class=" add-to-heart m-2">
                                                 <i class="far fa-heart"></i>
@@ -445,152 +448,8 @@
                             </div>
                             <div class="col-6 col-md-4">
                                 <div class="box-shadow shadow-sm mt-3 mt-md-2">
-                                    <a href="./category-detail.html">
-                                        <div class="card border-0 h-100" style="width: 100%;">
-                                            <img src="./images/product-recently/product image -2.png"
-                                                class="card-img-top p-1 image " loading="lazy"
-                                                alt="image Related category">
-                                            <div class="p-2 content-swiper">
-                                                <p class="text-uppercase m-0 p-0 name-mobile">iphones</p>
-                                                <p class="text"> Iphone gold 2021 </p>
-                                                <div class="row">
-                                                    <div class="col-12 col-md-6">
-                                                        <p class="price-swiper">1299,00 EGP</p>
-                                                    </div>
-                                                    <div class="col-12 col-md-6">
-                                                        <p class="text-decoration-line-through fw-bold">1499,00 EGP</p>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 d-flex stars-product">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="btn rounded-0 button-cart-mobile">
-                                                <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <div class="middle">
-                                        <div class="icons">
-                                            <div class=" add-to-cart m-2">
-                                                <i class="fa fa-cart-plus"></i>
-                                            </div>
-                                            <div class=" add-to-heart m-2">
-                                                <i class="far fa-heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icons-mobile d-lg-none d-lg-block">
-                                        <div class=" add-to-heart m-2">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4">
-                                <div class="box-shadow shadow-sm mt-3 mt-md-2">
-                                    <a href="./category-detail.html">
-                                        <div class="card border-0 h-100" style="width: 100%;">
-                                            <img src="./images/product-recently/product image -3.png"
-                                                class="card-img-top p-1 image " loading="lazy"
-                                                alt="image Related category">
-                                            <div class="p-2 content-swiper">
-                                                <p class="text-uppercase m-0 p-0 name-mobile">iphones</p>
-                                                <p class="text"> Iphone gold 2021 </p>
-                                                <div class="row">
-                                                    <div class="col-12 col-md-6">
-                                                        <p class="price-swiper">1299,00 EGP</p>
-                                                    </div>
-                                                    <div class="col-12 col-md-6">
-                                                        <p class="text-decoration-line-through fw-bold">1499,00 EGP</p>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 d-flex stars-product">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="btn rounded-0 button-cart-mobile">
-                                                <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <div class="middle">
-                                        <div class="icons">
-                                            <div class=" add-to-cart m-2">
-                                                <i class="fa fa-cart-plus"></i>
-                                            </div>
-                                            <div class=" add-to-heart m-2">
-                                                <i class="far fa-heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icons-mobile d-lg-none d-lg-block">
-                                        <div class=" add-to-heart m-2">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4">
-                                <div class="box-shadow shadow-sm mt-3 mt-md-2">
-                                    <a href="./category-detail.html">
-                                        <div class="card border-0 h-100" style="width: 100%;">
-                                            <img src="./images/product-recently/product image -4.png"
-                                                class="card-img-top p-1 image " loading="lazy"
-                                                alt="image Related category">
-                                            <div class="p-2 content-swiper">
-                                                <p class="text-uppercase m-0 p-0 name-mobile">iphones</p>
-                                                <p class="text"> Iphone gold 2021 </p>
-                                                <div class="row">
-                                                    <div class="col-12 col-md-6">
-                                                        <p class="price-swiper">1299,00 EGP</p>
-                                                    </div>
-                                                    <div class="col-12 col-md-6">
-                                                        <p class="text-decoration-line-through fw-bold">1499,00 EGP</p>
-                                                    </div>
-                                                    <div class="col-12 col-md-12 d-flex stars-product">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="btn rounded-0 button-cart-mobile">
-                                                <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <div class="middle">
-                                        <div class="icons">
-                                            <div class=" add-to-cart m-2">
-                                                <i class="fa fa-cart-plus"></i>
-                                            </div>
-                                            <div class=" add-to-heart m-2">
-                                                <i class="far fa-heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icons-mobile d-lg-none d-lg-block">
-                                        <div class=" add-to-heart m-2">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4">
-                                <div class="box-shadow shadow-sm mt-3 mt-md-2">
-                                    <a href="./category-detail.html">
-                                        <div class="card border-0 h-100" style="width: 100%;">
+                                    <div class="card border-0 h-100" style="width: 100%;">
+                                        <a href="./category-detail.html">
                                             <img src="./images/product-recently/product image -1.png"
                                                 class="card-img-top p-1 image " loading="lazy"
                                                 alt="image Related category">
@@ -613,15 +472,18 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn rounded-0 button-cart-mobile">
-                                                <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
-                                            </button>
-                                        </div>
-                                    </a>
+                                        </a>
+                                        <button class="btn rounded-0 button-cart-mobile" data-bs-toggle="offcanvas"
+                                            data-bs-target="#cart-demo-canvas">
+                                            <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
+                                        </button>
+                                    </div>
+
                                     <div class="middle">
                                         <div class="icons">
                                             <div class=" add-to-cart m-2">
-                                                <i class="fa fa-cart-plus"></i>
+                                                <i class="fa fa-cart-plus" data-bs-toggle="offcanvas"
+                                                    data-bs-target="#cart-demo-canvas"></i>
                                             </div>
                                             <div class=" add-to-heart m-2">
                                                 <i class="far fa-heart"></i>
@@ -637,9 +499,9 @@
                             </div>
                             <div class="col-6 col-md-4">
                                 <div class="box-shadow shadow-sm mt-3 mt-md-2">
-                                    <a href="./category-detail.html">
-                                        <div class="card border-0 h-100" style="width: 100%;">
-                                            <img src="./images/product-recently/product image -6.png"
+                                    <div class="card border-0 h-100" style="width: 100%;">
+                                        <a href="./category-detail.html">
+                                            <img src="./images/product-recently/product image -1.png"
                                                 class="card-img-top p-1 image " loading="lazy"
                                                 alt="image Related category">
                                             <div class="p-2 content-swiper">
@@ -661,15 +523,171 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn rounded-0 button-cart-mobile">
-                                                <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
-                                            </button>
-                                        </div>
-                                    </a>
+                                        </a>
+                                        <button class="btn rounded-0 button-cart-mobile" data-bs-toggle="offcanvas"
+                                            data-bs-target="#cart-demo-canvas">
+                                            <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
+                                        </button>
+                                    </div>
+
                                     <div class="middle">
                                         <div class="icons">
                                             <div class=" add-to-cart m-2">
-                                                <i class="fa fa-cart-plus"></i>
+                                                <i class="fa fa-cart-plus" data-bs-toggle="offcanvas"
+                                                    data-bs-target="#cart-demo-canvas"></i>
+                                            </div>
+                                            <div class=" add-to-heart m-2">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icons-mobile d-lg-none d-lg-block">
+                                        <div class=" add-to-heart m-2">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="box-shadow shadow-sm mt-3 mt-md-2">
+                                    <div class="card border-0 h-100" style="width: 100%;">
+                                        <a href="./category-detail.html">
+                                            <img src="./images/product-recently/product image -1.png"
+                                                class="card-img-top p-1 image " loading="lazy"
+                                                alt="image Related category">
+                                            <div class="p-2 content-swiper">
+                                                <p class="text-uppercase m-0 p-0 name-mobile">iphones</p>
+                                                <p class="text"> Iphone gold 2021 </p>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="price-swiper">1299,00 EGP</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="text-decoration-line-through fw-bold">1499,00 EGP</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 d-flex stars-product">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="btn rounded-0 button-cart-mobile" data-bs-toggle="offcanvas"
+                                            data-bs-target="#cart-demo-canvas">
+                                            <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
+                                        </button>
+                                    </div>
+
+                                    <div class="middle">
+                                        <div class="icons">
+                                            <div class=" add-to-cart m-2">
+                                                <i class="fa fa-cart-plus" data-bs-toggle="offcanvas"
+                                                    data-bs-target="#cart-demo-canvas"></i>
+                                            </div>
+                                            <div class=" add-to-heart m-2">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icons-mobile d-lg-none d-lg-block">
+                                        <div class=" add-to-heart m-2">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="box-shadow shadow-sm mt-3 mt-md-2">
+                                    <div class="card border-0 h-100" style="width: 100%;">
+                                        <a href="./category-detail.html">
+                                            <img src="./images/product-recently/product image -1.png"
+                                                class="card-img-top p-1 image " loading="lazy"
+                                                alt="image Related category">
+                                            <div class="p-2 content-swiper">
+                                                <p class="text-uppercase m-0 p-0 name-mobile">iphones</p>
+                                                <p class="text"> Iphone gold 2021 </p>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="price-swiper">1299,00 EGP</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="text-decoration-line-through fw-bold">1499,00 EGP</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 d-flex stars-product">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="btn rounded-0 button-cart-mobile" data-bs-toggle="offcanvas"
+                                            data-bs-target="#cart-demo-canvas">
+                                            <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
+                                        </button>
+                                    </div>
+
+                                    <div class="middle">
+                                        <div class="icons">
+                                            <div class=" add-to-cart m-2">
+                                                <i class="fa fa-cart-plus" data-bs-toggle="offcanvas"
+                                                    data-bs-target="#cart-demo-canvas"></i>
+                                            </div>
+                                            <div class=" add-to-heart m-2">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icons-mobile d-lg-none d-lg-block">
+                                        <div class=" add-to-heart m-2">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="box-shadow shadow-sm mt-3 mt-md-2">
+                                    <div class="card border-0 h-100" style="width: 100%;">
+                                        <a href="./category-detail.html">
+                                            <img src="./images/product-recently/product image -1.png"
+                                                class="card-img-top p-1 image " loading="lazy"
+                                                alt="image Related category">
+                                            <div class="p-2 content-swiper">
+                                                <p class="text-uppercase m-0 p-0 name-mobile">iphones</p>
+                                                <p class="text"> Iphone gold 2021 </p>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="price-swiper">1299,00 EGP</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="text-decoration-line-through fw-bold">1499,00 EGP</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 d-flex stars-product">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <button class="btn rounded-0 button-cart-mobile" data-bs-toggle="offcanvas"
+                                            data-bs-target="#cart-demo-canvas">
+                                            <i class="fa fa-cart-plus m-2 text-white"></i> Add to cart
+                                        </button>
+                                    </div>
+
+                                    <div class="middle">
+                                        <div class="icons">
+                                            <div class=" add-to-cart m-2">
+                                                <i class="fa fa-cart-plus" data-bs-toggle="offcanvas"
+                                                    data-bs-target="#cart-demo-canvas"></i>
                                             </div>
                                             <div class=" add-to-heart m-2">
                                                 <i class="far fa-heart"></i>
@@ -1127,6 +1145,113 @@
         </div>
     </div>
     <!-- end bottom footer -->
+
+
+
+
+
+
+
+    <!-- start canvas add to cart -->
+    <div class="offcanvas offcanvas-start" id="cart-demo-canvas">
+        <div class="offcanvas-body col justify-content-md-between">
+            <div class="row">
+                <div class="col">
+                    <h5>My Bag (1)</h5>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-close display-good mt-2" data-bs-dismiss="offcanvas"></button>
+                </div>
+            </div>
+            <div class="box-canvas border-bottom delete-box 1" alt="1">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./images/offers/offer-1.png" alt="image product" width="150" height="100"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6">
+                        <p class="m-0 p-0 text-dark">Excellence Black Edition 128 GB / 13 Pro</p>
+                        <p class="mt-2 mb-2 text-dark">2,222,00 EGP</p>
+                        <a style="cursor: pointer;">
+                            <p class="text-decoration-underline deleted">Remove</p>
+                        </a>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="input-group mb-1">
+                        <button class="m-2 mt-1 button-add" type="button" id="button-addon2">+</button>
+                        <input type="number" class="form-control quantity text-center" min="1" step="1" max="10"
+                            value="1" aria-label="count number" aria-describedby="button-addon2">
+                        <button class="m-2 mt-1 button-minuse" type="button" id="button-addon2">-</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="box-canvas border-bottom delete-box 2" alt="2">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./images/offers/offer-1.png" alt="image product" width="150" height="100"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6">
+                        <p class="m-0 p-0 text-dark">Excellence Black Edition 128 GB / 13 Pro</p>
+                        <p class="mt-2 mb-2 text-dark">2,222,00 EGP</p>
+                        <a style="cursor: pointer;">
+                            <p class="text-decoration-underline deleted">Remove</p>
+                        </a>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="input-group mb-1">
+                        <button class="m-2 mt-1 button-add" type="button" id="button-addon2">+</button>
+                        <input type="number" class="form-control quantity text-center" min="1" step="1" max="10"
+                            value="1" aria-label="count number" aria-describedby="button-addon2">
+                        <button class="m-2 mt-1 button-minuse" type="button" id="button-addon2">-</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="box-canvas border-bottom delete-box 3" alt="3">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./images/offers/offer-1.png" alt="image product" width="150" height="100"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6">
+                        <p class="m-0 p-0 text-dark">Excellence Black Edition 128 GB / 13 Pro</p>
+                        <p class="mt-2 mb-2 text-dark">2,222,00 EGP</p>
+                        <a style="cursor: pointer;">
+                            <p class="text-decoration-underline deleted">Remove</p>
+                        </a>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="input-group mb-1">
+                        <button class="m-2 mt-1 button-add" type="button" id="button-addon2">+</button>
+                        <input type="number" class="form-control quantity text-center" min="1" step="1" max="10"
+                            value="1" aria-label="count number" aria-describedby="button-addon2">
+                        <button class="m-2 mt-1 button-minuse" type="button" id="button-addon2">-</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="offcanvas-header">
+            <div class="offcanvas-title  w-100">
+                <div class="row">
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold" style="letter-spacing: 1px;">subtotal</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="fw-bold">2,222,00 EGP</h6>
+                    </div>
+                </div>
+                <button class="btn mx-auto d-block text-center w-100 mb-2">proceed to checkout</button>
+                <button class="btn mx-auto d-block text-center w-100">view shopping bag</button>
+            </div>
+        </div>
+    </div>
+    <!-- end canvas add to cart  -->
 
 
 

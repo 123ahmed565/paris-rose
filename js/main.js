@@ -58,3 +58,47 @@ var swiper = new Swiper(".mySwiper2", {
         },
     }
 });
+
+
+// Start Taostr js to alert
+toastr.options = {
+    closeButton: true,
+    debug: false,
+    newestOnTop: false,
+    progressBar: true,
+    positionClass: "toast-top-right",
+    preventDuplicates: false,
+    onclick: null,
+    showDuration: "300",
+    hideDuration: "100",
+    timeOut: "2000",
+    extendedTimeOut: "60000",
+    showEasing: "swing",
+    hideEasing: "linear",
+    showMethod: "fadeIn",
+    hideMethod: "fadeOut",
+};
+
+$(".deleted").click(function () {
+    toastr.success("Delete Done");
+});
+
+
+
+// increase and decrease number in canvas menu for product
+$('.input-group').on('click', '.button-add', function() {
+    var quantity=$('.quantity').val();
+    $('.quantity').val(parseInt(quantity)+1);
+});
+
+$('.input-group').on('click', '.button-minuse', function() {
+    var quantity=$('.quantity').val();
+    $('.quantity').val(parseInt(quantity)-1);
+});
+
+
+// fuunction delete one box of canvas cart
+$(document).on('click','.deleted',function(){
+    var id=$(".delete-box").attr('alt');
+    $('.delete-box'+"."+id).remove();
+});
