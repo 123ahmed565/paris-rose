@@ -397,7 +397,7 @@ input[type=submit]:hover {
     .navbar-expand-sm .navbar-nav .nav-link{
         color: var(--colorText) !important;
         border-bottom: 1px solid gray;
-        padding: 15px;
+        padding: 11px;
     }
     .offcanvas{
         background-color: var(--primary);
