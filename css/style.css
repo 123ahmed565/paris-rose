@@ -931,6 +931,13 @@ color: #898989;
 /* end footer */
 
 /* start bottom footer */
+.bottom-footer{
+    background-color: var(--colorText);
+    position: relative;
+}
+/* end bottom footer */
+
+/* start bottom mobile */
 .bottom-appbar {
     display: block;
     height: 50px;
@@ -1017,48 +1024,6 @@ color: #898989;
         display: none;
     }
 }
-/* end bottom footer */
-
-/* start bottom mobile */
-/* .bottom-menu{
-    display: block;
-    position: fixed;
-    z-index: 4000;
-    padding-left: 10px;
-    padding-right: 10px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background-color: black;
-}
-
-.active-color{
-    color: #F3F0F0;
-}
-
-.bottom-menu ul{
-    display: flex !important;
-    justify-content: space-between !important;
-    margin-top: 7px;
-}
-
-.bottom-menu ul li{
-    text-align: center;
-    margin-left: -31px;
-}
-
-.bottom-menu ul li span{
-    display: block;
-    font-size: 13px;
-}
-
-
-@media (min-width:768px) {
-    .bottom-menu{
-        display: none;
-    }
-} */
 /* end bottom mobile */
 
 /* start canvas add to cart */
