@@ -92,6 +92,13 @@ $(".add-to-heart").click(function () {
 });
 
 
+// start add active color to bottom menu mobile
+$(document).on('click','.active-color',function(){
+    $('.active-color').css("color", "#F3F0F0");
+    $(this).css("color", "var(--colorText)");
+});
+
+
 
 // increase and decrease number in canvas menu for product
 $('.input-group').on('click', '.button-add', function() {
