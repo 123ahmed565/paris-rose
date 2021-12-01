@@ -1057,17 +1057,17 @@ color: #898989;
     width: 20% !important;
 }
 
-.display-good{
+#cart-demo-canvas .display-good{
 float: left !important;
 }
 
-.box-canvas img{
-    width: 105px !important;
+#cart-demo-canvas .box-canvas img{
+    width: 105px;
     height: 100px;
     border-radius: 5px;
 }
 
-.input-group .button-add{
+#cart-demo-canvas .input-group .button-add{
     width: 30px;
     height: 30px;
     font-size: 22px;
@@ -1076,7 +1076,7 @@ float: left !important;
     border-radius: 50%;
 }
 
-.input-group .button-minuse{
+#cart-demo-canvas .input-group .button-minuse{
     width: 30px;
     height: 30px;
     font-size: 22px;
@@ -1085,7 +1085,7 @@ float: left !important;
     border-radius: 50%;
 }
 
-.input-group .form-control{
+#cart-demo-canvas .input-group .form-control{
     height: 25px !important;
     border-radius: 10px !important;
 }
@@ -1095,20 +1095,25 @@ float: left !important;
         width: 70% !important;
         background-color: white !important;
     }
+    #cart-demo-canvas  .box-canvas img{
+        width: 100px;
+        height: 85px;
+        border-radius: 5px;
+    }
 }
 /* end canvas add to cart */
 
-/* start canvas add to cart */
+/* start canvas add to wishlest */
 #wishlest-demo-canvas{
     width: 20% !important;
 }
 
-.display-good{
-float: right !important;
+#wishlest-demo-canvas .display-good{
+float: left !important;
 }
 
-.box-canvas img{
-    width: 105px !important;
+#wishlest-demo-canvas .box-canvas img{
+    width: 105px;
     height: 100px;
     border-radius: 5px;
 }
@@ -1118,5 +1123,10 @@ float: right !important;
         width: 70% !important;
         background-color: white !important;
     }
+    #wishlest-demo-canvas .box-canvas img{
+        width: 100px;
+        height: 85px;
+        border-radius: 5px;
+    }
 }
-/* end canvas add to cart */
+/* end canvas add to wishlest */
