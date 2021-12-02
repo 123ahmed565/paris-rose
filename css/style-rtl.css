@@ -660,7 +660,7 @@ font-weight: 600;
     opacity: 1;
     display: block;
     width: 100%;
-    height: 250px;
+    height: 290px;
     transition: .5s ease;
     backface-visibility: hidden;
     object-fit: contain;
@@ -735,7 +735,7 @@ font-weight: 600;
         opacity: 1;
         display: block;
         width: 100%;
-        height: 215px !important;
+        height: 250px !important;
         transition: .5s ease;
         backface-visibility: hidden;
         object-fit: contain;
@@ -826,7 +826,7 @@ font-size: 18px;
 
 .recently-viewed .swiper-slide img {
     width: 100%;
-    height: 170px;
+    height: 210px;
     object-fit: contain;
 }
 
@@ -886,7 +886,7 @@ color: #898989;
     }
     .recently-viewed .swiper-slide img {
         width: 100%;
-        height: 165px;
+        height: 250px;
         object-fit: contain;
     }
 }
