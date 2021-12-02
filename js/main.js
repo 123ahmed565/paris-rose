@@ -1,6 +1,6 @@
 // start recenlty vewied
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 5.5,
+    slidesPerView: 4.5,
     spaceBetween: 30,
     loop:true,
     freeMode: true,
@@ -22,7 +22,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 20
         },
         1000: {
-        slidesPerView: 5.5,
+        slidesPerView: 4.5,
         spaceBetween: 20
         },
     }

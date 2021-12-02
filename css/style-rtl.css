@@ -222,16 +222,16 @@ input[type=submit]:hover {
 }
 
 .wrapper{
-    width: 90%;
+    width: 94%;
     margin: auto;
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     .wrapper{
         width: 95%;
         margin: auto;
     }
-}
+} */
 /* end global features */
 
 /* start top head */
