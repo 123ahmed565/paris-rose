@@ -947,6 +947,12 @@ color: #898989;
     background-color: var(--colorText);
     position: relative;
 }
+
+@media (max-width:768px) {
+    .bottom-footer{
+        min-height: 180px;
+    } 
+}
 /* end bottom footer */
 
 /* start bottom mobile */
@@ -1017,7 +1023,7 @@ color: #898989;
 }
 .bottom-appbar .tabs .fab {
     border-radius: 50%;
-    background-color: #b2841d;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
