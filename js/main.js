@@ -14,7 +14,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints:{
         0: {
-        slidesPerView: 2.5,
+        slidesPerView: 1.5,
         spaceBetween: 15 
         },
         600: {
