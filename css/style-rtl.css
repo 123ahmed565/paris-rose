@@ -3,7 +3,8 @@
 
 :root{
     --primary:#141424;
-    --colorText:#f4bd24;
+    /* --colorText:#f4bd24; */
+    --colorText:#b2841d ;
     --secondary:#231f20;
     --far_bars:white;
     --icon:#f4bd24;
@@ -118,6 +119,7 @@ p{
     border-radius: 10px;
     padding: 10px 20px;
     white-space: nowrap;
+    box-shadow: none !important;
 }
 
 .btn:hover{
@@ -310,7 +312,7 @@ input[type=submit]:hover {
     text-align: center;
     background-color: var(--colorText);
     color: black !important;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     font-size: 13px;
 }
 
@@ -326,7 +328,7 @@ input[type=submit]:hover {
     text-align: center;
     background-color: var(--colorText);
     color: black !important;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     font-size: 13px;
 }
 
@@ -472,7 +474,7 @@ display: flex;
 .block-menu-open{
 background-color: var(--colorText);
 border-radius: 10px;
-padding: 10px;
+/* padding: 10px; */
 cursor: pointer;
 }
 
@@ -557,7 +559,7 @@ font-size: 25px;
 @media (max-width:768px) {
     .carousel-inner img{
         max-width: 100% !important;
-        height: 230px !important;
+        height: 170px !important;
     }
 }
 /* end carousal slider */
@@ -735,7 +737,7 @@ font-weight: 600;
         height: 165px !important;
         transition: .5s ease;
         backface-visibility: hidden;
-        object-fit: cover;
+        object-fit: contain;
     }
     .button-cart-mobile{
         display: block;
@@ -783,8 +785,9 @@ font-size: 18px;
 }
 
 .best-price-box button{
-    color: black;
+    color: white;
     font-weight: 600;
+    box-shadow: none !important;
 }
 
 @media (max-width:768px) {
@@ -822,7 +825,7 @@ font-size: 18px;
 .recently-viewed .swiper-slide img {
     width: 100%;
     height: 170px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .button-shop{
@@ -833,6 +836,7 @@ font-size: 18px;
     border-bottom:2px solid #ced5e1;
     padding-bottom: 15px;
     padding-right: 20px;
+    white-space: nowrap;
 }
 
 .content-swiper{
@@ -1163,7 +1167,7 @@ float: left !important;
     top: 32px;
     width: 32px;
     height: 32px;
-    opacity: 0.3;
+    opacity: 1;
 }
 #search-box .container .close:hover {
     opacity: 1;
@@ -1199,7 +1203,7 @@ float: left !important;
     box-shadow: none;
     padding: 12px 74px 12px 0;
     font-size: 18px;
-    height: 15px;
+    height: 50px;
     border-bottom: 2px solid white;
     display: block;
     color: white;
