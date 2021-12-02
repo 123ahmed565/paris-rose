@@ -1037,6 +1037,38 @@ color: #898989;
     transform: translate(0px, -70%);
 }
 
+.bottom-appbar .badge-cart{
+    position: absolute;
+    bottom: 70%;
+    left: 33%;
+    width: 19px;
+    height: 19px;
+    line-height:7px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    color: black !important;
+    font-size: 13px;
+}
+
+.bottom-appbar .badge-heart{
+    position: absolute;
+    bottom:70%;
+    left: 68%;
+    width: 19px;
+    height: 19px;
+    line-height:7px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    color: black !important;
+    font-size: 13px;
+}
+
 @media (min-width:768px) {
     .bottom-appbar{
         display: none;
