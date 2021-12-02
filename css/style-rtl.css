@@ -884,7 +884,7 @@ color: #898989;
     }
     .recently-viewed .swiper-slide img {
         width: 100%;
-        height: 185px;
+        height: 165px;
         object-fit: contain;
     }
 }
