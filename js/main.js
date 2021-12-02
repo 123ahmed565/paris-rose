@@ -117,3 +117,5 @@ $(document).on('click','.deleted',function(){
     var id=$(".delete-box").attr('alt');
     $('.delete-box'+"."+id).remove();
 });
+
+
