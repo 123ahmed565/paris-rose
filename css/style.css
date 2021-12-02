@@ -490,7 +490,7 @@ word-break: break-all;
 /* start carousal slider */
 .carousel-inner img{
     width: 100% !important;
-    height: 625px !important;
+    height: 550px !important;
 }
 
 .carousel-caption{
@@ -503,7 +503,7 @@ word-break: break-all;
     height: auto;
     width: 450px;
     /* top: 40%; */
-    bottom: 500%;
+    bottom: 400%;
     right: 65%;
     background: rgb(16 15 15 / 65%);
     color: white;
@@ -834,8 +834,8 @@ color: #898989;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
-            line-clamp: 2; 
+    -webkit-line-clamp: 1; /* number of lines to show */
+            line-clamp: 1; 
     -webkit-box-orient: vertical;
     font-weight: 600 !important;
     color: #231F20 !important;
@@ -860,7 +860,7 @@ color: #898989;
     .recently-viewed  .swiper-slide img {
         width: 100%;
         height: 185px;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 /* end recently veiwed */
