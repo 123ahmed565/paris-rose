@@ -703,6 +703,7 @@ font-weight: 600;
     width: 30px;
     height: 30px;
     line-height: 30px;
+    font-size: 22px;
     text-align: center;
     border-radius: 50%;
     color: white !important;
@@ -721,13 +722,13 @@ font-weight: 600;
     .box-shadow .icons-mobile{
         position: absolute;
         top: 0% !important;
-        left: 73%;
+        left: 87%;
     }
     .box-shadow  .image {
         opacity: 1;
         display: block;
         width: 100%;
-        height: 165px !important;
+        height: 215px !important;
         transition: .5s ease;
         backface-visibility: hidden;
         object-fit: contain;
@@ -791,6 +792,7 @@ font-size: 18px;
     }
     .best-price-box{
         margin-top: 10px;
+        text-align: center;
     }
 }
 /* end best price */
@@ -938,6 +940,10 @@ color: #898989;
     }
     .footer-image{
         height: 1000px !important;
+    }
+    .mobile-block{
+        display: block !important;
+        margin-bottom: 10px;
     }
 }
 /* end footer */
