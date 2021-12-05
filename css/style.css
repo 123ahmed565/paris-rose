@@ -1071,6 +1071,7 @@ color: #898989;
 .bottom-footer img{
     margin-left: 10px;
     border-radius: 3px;
+    margin-top: 5px;
 }
 
 @media (max-width:768px) {
