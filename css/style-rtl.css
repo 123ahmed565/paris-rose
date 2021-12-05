@@ -234,6 +234,110 @@ input[type=submit]:hover {
 } */
 /* end global features */
 
+/* preloader*/
+.preloaders {
+    position: fixed;
+    z-index: 99999;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.preloaders .loaders {
+    border: 0px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.loaders::before {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+
+.loaders:before,
+.loaders:after {
+    content: "";
+    border: 10px solid var(--colorText);
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: loader 2s linear infinite;
+            animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+@-webkit-keyframes loader {
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    }
+}
+
+@keyframes loader {
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    }
+}
+/* end preloader */
+
+/* start top button */
+.scroll-to-top{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background:var(--colorText);  
+    border: none;  
+    transition-duration: 500ms;
+    z-index: 2;
+}
+
+.scroll-to-top:hover{
+    background: black;
+    transition: .3s all ease-in-out;
+}
+
+@media (max-width:768px) {
+    .scroll-to-top{
+        right: 20px;
+        bottom: 60px;
+        width: 40px;
+        height: 40px;
+    }
+}
+/* end top button */
+
 /* start top head */
 @media (max-width:768px) {
     .top-head{
@@ -625,7 +729,14 @@ font-weight: 600;
 
 .offer-card img{
     width: 100%;
-    height: 300px;
+    height: 415px;
+}
+
+@media (max-width:768px) {
+    .offer-card img{
+        width: 100%;
+        height: 315px;
+    }
 }
 /* end offers */
 
@@ -660,7 +771,7 @@ font-weight: 600;
     opacity: 1;
     display: block;
     width: 100%;
-    height: 290px;
+    height: 300px;
     transition: .5s ease;
     backface-visibility: hidden;
     object-fit: contain;
@@ -826,7 +937,7 @@ font-size: 18px;
 
 .recently-viewed .swiper-slide img {
     width: 100%;
-    height: 210px;
+    height: 270px;
     object-fit: contain;
 }
 
@@ -922,7 +1033,7 @@ color: #898989;
 
 /* start footer */
 .footer-image {
-    height: 60vh;
+    height: 50vh;
     width: 100vw;
     position: relative;
     background-size: cover;
@@ -980,6 +1091,11 @@ color: #898989;
 .bottom-footer{
     background-color: var(--colorText);
     position: relative;
+}
+
+.bottom-footer img{
+    margin-right: 10px;
+    border-radius: 3px;
 }
 
 @media (max-width:768px) {
