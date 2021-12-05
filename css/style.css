@@ -3,8 +3,8 @@
 
 :root{
     --primary:#141424;
-    /* --colorText:#f4bd24; */
-    --colorText:#b2841d ;
+    --colorText:#ECC96D;
+    /* --colorText:#b2841d ; */
     --secondary:#231f20;
     --far_bars:white;
     --icon:#f4bd24;
@@ -496,13 +496,16 @@ input[type=submit]:hover {
 }
 
 .navbar{
-    background-color: #b2841d !important;
+    background-color: var(--colorText) !important;
 }
 
 @media (min-width:768px) {
     .navbar-expand-sm .navbar-nav .nav-link{
         color: white;
         white-space: nowrap;
+    }
+    .text-pc{
+        display: block;
     }
 }
 
@@ -517,6 +520,9 @@ input[type=submit]:hover {
     }
     .navbar{
         background-color: black !important;
+    }
+    .text-pc{
+        display: none;
     }
 }
 
@@ -539,6 +545,54 @@ input[type=submit]:hover {
     font-size: 15px;
     transition: .3s all ease-in-out;
 }
+
+.item {
+    border-bottom: 1px solid gray;
+}
+.item .item-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    padding: 1px;
+}
+
+.item .item-header .title {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 9px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--colorText) !important;
+}
+
+.item .item-header .icon {
+    vertical-align: middle;
+}
+
+.item .item-header .active {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.item .content {
+    display: none;
+    background-color: var(--colorText);
+}
+
+.content ul li a{
+    font-weight: 800;
+    color: black;
+    margin: 10px;
+}
+
 
 /* for top head mobile */
 .search-mobile{
@@ -783,6 +837,7 @@ font-weight: 600;
 
 .box-shadow:hover .image {
     opacity: 0.3;
+    transform: scaleX(-1);
 }
 
 .box-shadow:hover .middle {
@@ -1076,7 +1131,7 @@ color: #898989;
 
 @media (max-width:768px) {
     .bottom-footer{
-        min-height: 220px;
+        min-height: 235px;
     } 
 }
 /* end bottom footer */

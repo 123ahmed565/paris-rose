@@ -163,3 +163,12 @@ scrollBtn.style.display="block";
 window.onload = function () {
     document.querySelector(".preloaders").style.display = "none";
 };
+
+// collapse canvas boddy mobile
+// $(".content").css("display", "block");
+// $(".item-header:first,.icon:first").toggleClass("active");
+$(".item-header").click(function () {
+    $(this).next().slideToggle(500);
+    $(this).find(".icon").toggleClass("active");
+    $(this).toggleClass("active");
+});
