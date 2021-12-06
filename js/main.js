@@ -39,10 +39,6 @@ var swiper = new Swiper(".mySwiper2", {
     el: ".swiper-pagination",
     clickable: true,
     },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
     breakpoints:{
         0: {
         slidesPerView: 2.5,
@@ -165,10 +161,61 @@ window.onload = function () {
 };
 
 // collapse canvas boddy mobile
-// $(".content").css("display", "block");
-// $(".item-header:first,.icon:first").toggleClass("active");
+$(".content").css("display", "block");
+$(".item-header:first,.icon:first").toggleClass("active");
 $(".item-header").click(function () {
     $(this).next().slideToggle(500);
     $(this).find(".icon").toggleClass("active");
     $(this).toggleClass("active");
 });
+
+
+// swiper page product details
+var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    loop:true,
+    direction: 'vertical',
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            direction: 'horizontal',
+
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            direction: 'horizontal',
+        },
+        1000: {
+            slidesPerView: 5,
+            spaceBetween: 60,
+            direction: 'vertical',
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            direction: 'vertical',
+        },
+    }
+});
+
+// show small img to big image page product details
+$(".vertical-swiper img").mouseover(function () {
+    var imageSrc = $(this).attr("src");
+    $(".big-image img").attr("src", imageSrc);
+});
+
+// Change Active Color For Product Deatails
+const colors = document.querySelectorAll(".color");
+function changeColor() {
+    colors.forEach((c) => c.classList.remove("active"));
+    this.classList.add("active");
+}
+colors.forEach((c) => c.addEventListener("click", changeColor));
