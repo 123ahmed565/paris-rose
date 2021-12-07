@@ -160,6 +160,7 @@ window.onload = function () {
     document.querySelector(".preloaders").style.display = "none";
 };
 
+
 // collapse canvas boddy mobile
 $(".content").css("display", "block");
 $(".item-header:first,.icon:first").toggleClass("active");
@@ -221,6 +222,36 @@ function changeColor() {
 colors.forEach((c) => c.addEventListener("click", changeColor));
 
 
+// collapse category filter
+// $(".content-collapse").css("display", "block");
+// $(".item-header-collapse:first,.icon:first").toggleClass("active");
+$(".item-header-collapse").click(function () {
+    $(this).next().slideToggle(500);
+    $(this).find(".icon").toggleClass("active");
+    $(this).toggleClass("active");
+});
+
+
+// grid - list for page categories
+$(document).ready(function (){
+    $('.gridListBtn').on('click',function (e){
+        e.preventDefault();
+        var type = $(this).attr('id');
+        // console.log(type);
+        if(type == 'list'){
+            // container control
+            $('.ul-filter').removeClass('list-view-filter');
+            $('.ul-filter').removeClass('grid-view-filter');
+            $('.ul-filter').addClass('list-view-filter ');
+        } else if(type == 'grid'){
+            // container control
+            $('.ul-filter').removeClass('list-view-filter');
+            $('.ul-filter').removeClass('grid-view-filter');
+            $('.ul-filter').addClass('grid-view-filter');
+        }
+    });
+});
+
 // zoom product details
 var w = window.innerWidth;
 if (w > 991) {
@@ -233,3 +264,7 @@ $("#outerzoom").imagezoomsl({
     classtracker: "outer-tracker",
 });
 }
+
+
+
+
