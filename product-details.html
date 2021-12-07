@@ -12,6 +12,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/xzoom.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -297,7 +298,7 @@
         <div class="wrapper">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="product-view">
+                    <div class="product-view mb-4">
                         <div class="row">
                             <div class="col-md-3 mt-5">
                                 <div class="vertical-swiper">
@@ -346,12 +347,12 @@
                             <div class="col-md-9 d-none d-md-block">
                                 <div class="big-image mt-5 p-2" style="border: 1px solid gray;">
                                     <img src="./images/product-recently/product--6.webp"
-                                        class="img-fluid mx-auto d-block" alt="image view" loading="lazy">
+                                        class="img-fluid mx-auto d-block" id="outerzoom" alt="image view" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="about-item-description">
+                    <div class="about-item-description display-for-pc border-top">
                         <table class="table table-borderless">
                             <thead>
                                 <tr>
@@ -396,7 +397,83 @@
                         <p class="text-uppercase m-0 p-0">iphones</p>
                         <h2>iPhone 13 Pro Max 256GB Sierra Blue</h2>
 
+                        <h6 class="text-black">Expected Shipping: 3-7 business days</h6>
+
                         <div class="row">
+                            <div class="col-3 col-md-3">
+                                <p class="price-product">23.000EGP</p>
+                            </div>
+                            <div class="col-4 col-md-4">
+                                <p class="text-decoration-line-through fw-bold">33.000EGP</p>
+                            </div>
+                            <div class="col-5 col-md-5">
+                                <p class="copoun"><i class="fa fa-cart-plus m-2"></i>20%</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="color-container mt-4">
+                            <p class="m-0 p-0 text-black fw-bold">Color</p>
+                            <ul class="colors">
+                                <a>
+                                    <li class="color active" color="yellow"></li>
+                                </a>
+                                <a>
+                                    <li class="color" color="black"></li>
+                                </a>
+                                <a>
+                                    <li class="color" color="silver"></li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <form action="" class="border-bottom">
+                            <div class="size-product">
+                                <p class="mb-1 text-black fw-bold">Size</p>
+                                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                                <label class="btn-secondary m-2" for="option1">128 GB <br> 27,930 EGP</label>
+
+                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                <label class="btn-secondary m-2" for="option2">128 GB <br> 27,930 EGP</label>
+                                <br>
+                                <input type="radio" class="btn-check " name="options" id="option3" autocomplete="off">
+                                <label class="btn-secondary m-2" for="option3">128 GB <br> 27,930 EGP</label>
+
+                                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                                <label class="btn-secondary m-2" for="option4">128 GB <br> 27,930 EGP</label>
+                            </div>
+                        </form>
+
+                        <form action="">
+                            <div class="box-bought">
+                                <div class="row">
+                                    <div class="col-2 col-md-2">
+                                        <input type="number" name="" id="" placeholder="qty">
+                                    </div>
+                                    <div class="col-10 col-md-5">
+                                        <button class="btn ps-5 pe-5 mt-2 w-100">
+                                            <i class="fa fa-cart-plus m-1 text-white"></i> Add To Cart
+                                        </button>
+                                    </div>
+                                    <div class="col-12 col-md-5">
+                                        <button class="btn ps-4 pe-4 mt-2 w-100">
+                                            <i class="fa fa-heart m-1 text-white"></i> Add To wishlest
+                                        </button>
+                                    </div>
+                                    <p class="mt-2 text-black"><i class="fas fa-shipping-fast m-1"></i> Free Standard
+                                        Shipping </p>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div class="row mt-2">
                             <div class="col-4">
                                 <p class="text-decoration-underline share-product">Share</p>
                             </div>
@@ -429,103 +506,62 @@
                             </div>
                         </div>
 
-                        <h6 class="text-black">Expected Shipping: 3-7 business days</h6>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <p class="price-product">23.000EGP</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="text-decoration-line-through fw-bold">33.000EGP</p>
-                            </div>
-                            <div class="col-5">
-                                <p class="copoun"><i class="fa fa-cart-plus m-2"></i>20%</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-12 d-flex">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-
-                        <div class="color-container mt-4">
-                            <p class="m-0 p-0 ">Color</p>
-                            <ul class="colors">
-                                <a>
-                                    <li class="color active" color="yellow"></li>
-                                </a>
-                                <a>
-                                    <li class="color" color="black"></li>
-                                </a>
-                                <a>
-                                    <li class="color" color="silver"></li>
-                                </a>
-                            </ul>
-                        </div>
-
-                        <form action="" class="border-bottom">
-                            <div class="size-product">
-                                <p class="mb-1">Size</p>
-                                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-                                <label class="btn-secondary m-2" for="option1">128 GB <br> 27,930 EGP</label>
-
-                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                <label class="btn-secondary m-2" for="option2">128 GB <br> 27,930 EGP</label>
-                                <br>
-                                <input type="radio" class="btn-check " name="options" id="option3" autocomplete="off">
-                                <label class="btn-secondary m-2" for="option3">128 GB <br> 27,930 EGP</label>
-
-                                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                                <label class="btn-secondary m-2" for="option4">128 GB <br> 27,930 EGP</label>
-                            </div>
-                        </form>
-
-                        <form action="">
-                            <div class="box-bought">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <input type="number" name="" id="">
-                                    </div>
-                                    <div class="col-md-5">
-                                        <button class="btn ps-5 pe-5 mt-2">
-                                            <i class="fa fa-cart-plus m-1 text-white"></i> Add To Cart
-                                        </button>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <button class="btn ps-4 pe-4 mt-2">
-                                            <i class="fa fa-heart m-1 text-white"></i> Add To wishlest
-                                        </button>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button class="btn w-100 text-uppercase">buy now</button>
-                                    </div>
-                                    <p class="mt-2 text-black"><i class="fas fa-shipping-fast m-1"></i> Free Standard
-                                        Shipping </p>
-                                </div>
-                            </div>
-                        </form>
-
                         <div class="see-option mt-2">
                             <div class="row">
-                                <div class="col-4 d-flex">
+                                <div class="col-3 col-md-4 d-flex">
                                     <i class="fas fa-shield-alt m-1"></i>
                                     <p class="text-decoration-underline color-gear">
                                         Protect Your Gear
                                     </p>
                                 </div>
-                                <div class="col-5">
+                                <div class="col-4 col-md-5">
                                     Add a protection plan from 42.99 EGP
                                 </div>
-                                <div class="col-3">
+                                <div class="col-5 col-md-3">
                                     <button class="btn">See option</button>
                                 </div>
                             </div>
                         </div>
 
-
+                        <div class="about-item-description display-none-pc border-top">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="layout">About This Item</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Wireless Carrier</th>
+                                        <td>Unlocked</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Brand</th>
+                                        <td>Apple</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Memory Storage Capacity</th>
+                                        <td>128 GB</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Color</th>
+                                        <td>Black</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Screen Size</th>
+                                        <td>6.7 Inches</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Manufacturer</th>
+                                        <td>AppleComputer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Item Weight</th>
+                                        <td>0.93 Kilograms</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
                     </div>
                 </div>
@@ -1028,6 +1064,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/zoomsl.js"> </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js">
     </script>
     <script src="./js/main.js"></script>
