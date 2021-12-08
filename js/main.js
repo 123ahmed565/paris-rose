@@ -252,6 +252,11 @@ $(document).ready(function (){
     });
 });
 
+// this for show area when select city
+$(document).on('change','.select-this',function(){
+        document.getElementById("area-select").style.display = 'block';
+});
+
 // zoom product details
 var w = window.innerWidth;
 if (w > 991) {
