@@ -1139,6 +1139,10 @@ color: #898989;
     .news-letter-submit{
         margin: 0px !important;
     }
+    .image-paybal img{
+        width: 140px;
+        height: 60px;
+        }
 }
 /* end footer */
 
