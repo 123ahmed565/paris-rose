@@ -1633,8 +1633,8 @@ float: left !important;
     .vertical-swiper .swiper-slide img {
         display: block;
         width: 100%;
-        height: 280px;
-        object-fit: contain;
+        height: 318px;
+        object-fit: cover;
     }
     .vertical-swiper .item{
         border:none;
