@@ -175,7 +175,7 @@ $(".item-header").click(function () {
 var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 3,
     spaceBetween: 30,
-    freeMode: true,
+    // freeMode: true,
     loop:true,
     direction: 'vertical',
     pagination: {

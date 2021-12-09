@@ -1518,8 +1518,8 @@ float: left !important;
 }
 
 .big-image img{
-    width: 350px;
-    height: 400px;
+    width: 380px;
+    height: 500px;
 }
 
 .share-product{
@@ -1594,12 +1594,28 @@ float: left !important;
     background-color: #F0F2F7;
 }
 
-.see-option{
-    text-transform: capitalize;
+.btn-pro-deatils{
+    border: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    white-space: nowrap;
+    box-shadow: none !important;
 }
 
-.see-option .color-gear{
-    color: var(--colorText);
+.btn-pro-deatils:hover{
+    border: none;
+    background-color: black !important;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: .5s all ease-out;
+}
+
+.see-option{
+    text-transform: capitalize;
 }
 
 .about-item-description .layout{
@@ -1613,7 +1629,7 @@ float: left !important;
     .vertical-swiper .swiper-slide img {
         display: block;
         width: 100%;
-        height: 200px;
+        height: 250px;
         object-fit: contain;
     }
     .vertical-swiper .item{

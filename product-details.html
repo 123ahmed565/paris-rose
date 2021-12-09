@@ -299,7 +299,7 @@
         <div class="wrapper">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="product-view mb-4">
+                    <div class="product-view mb-5">
                         <div class="row">
                             <div class="col-md-3 mt-5">
                                 <div class="vertical-swiper">
@@ -346,14 +346,15 @@
                                 </div>
                             </div>
                             <div class="col-md-9 d-none d-md-block">
-                                <div class="big-image mt-5 p-2" style="border: 1px solid gray;">
+                                <div class="big-image mt-5 p-2">
                                     <img src="./images/product-recently/product--6.webp"
-                                        class="img-fluid mx-auto d-block" id="outerzoom" alt="image view" loading="lazy">
+                                        class="img-fluid mx-auto d-block" id="outerzoom" alt="image view"
+                                        loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="about-item-description display-for-pc border-top">
+                    <div class="about-item-description display-for-pc">
                         <table class="table table-borderless">
                             <thead>
                                 <tr>
@@ -459,13 +460,13 @@
                                         <input type="number" name="" id="" placeholder="qty">
                                     </div>
                                     <div class="col-9 col-md-5">
-                                        <button class="btn ps-5 pe-5 mt-2 w-100">
-                                            <i class="fa fa-cart-plus m-1 text-white"></i> Add To Cart
+                                        <button class="btn-pro-deatils ps-5 pe-5 mt-2 w-100">
+                                            <i class="fa fa-cart-plus m-1"></i> Add To Cart
                                         </button>
                                     </div>
                                     <div class="col-12 col-md-5">
-                                        <button class="btn ps-4 pe-4 mt-2 w-100">
-                                            <i class="fa fa-heart m-1 text-white"></i> Add To wishlest
+                                        <button class="btn-pro-deatils ps-4 pe-4 mt-2 w-100">
+                                            <i class="fa fa-heart m-1"></i> Add To wishlest
                                         </button>
                                     </div>
                                     <p class="mt-2 text-black"><i class="fas fa-shipping-fast m-1"></i> Free Standard
@@ -473,12 +474,23 @@
                                 </div>
                             </div>
                         </form>
-                        
-                        <div class="row mt-2">
-                            <div class="col-4">
-                                <p class="text-decoration-underline share-product">Share</p>
+
+                        <div class="see-option mt-2">
+                            <div class="row">
+                                <div class="col-4 col-md-5 d-flex">
+                                    <i class="fas fa-shield-alt m-1"></i>
+                                    <p class="text-decoration-underline text-black">
+                                        Protect Your Gear
+                                    </p>
+                                </div>
+                                <div class="col-8 col-md-7">
+                                    Add a protection plan from 1242.99 EGP
+                                </div>
                             </div>
-                            <div class="col-8">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
                                 <div class="share-social-container">
                                     <span style="font-size: 1.5rem;"></span>
                                     <div class="links-share a2a_kit a2a_kit_size_32 a2a_default_style"
@@ -503,23 +515,6 @@
                                                 data-a2a-localize="inner,Share">Share</span></a>
                                         <div style="clear: both;"></div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="see-option mt-2">
-                            <div class="row">
-                                <div class="col-3 col-md-4 d-flex">
-                                    <i class="fas fa-shield-alt m-1"></i>
-                                    <p class="text-decoration-underline color-gear">
-                                        Protect Your Gear
-                                    </p>
-                                </div>
-                                <div class="col-4 col-md-5">
-                                    Add a protection plan from 42.99 EGP
-                                </div>
-                                <div class="col-5 col-md-3">
-                                    <button class="btn">See option</button>
                                 </div>
                             </div>
                         </div>
@@ -570,43 +565,53 @@
 
             <!--nav tab description  -->
             <div class="nav-tab mt-4">
-                <div class="wrapper">
-                    <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-link active" id="nav-featured-tab" data-bs-toggle="tab" href="#nav-featured"
-                                role="tab" aria-controls="nav-home" aria-selected="true">
-                                Description
-                            </a>
+                <!-- <div class="wrapper"> -->
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active" id="nav-featured-tab" data-bs-toggle="tab" href="#nav-featured"
+                            role="tab" aria-controls="nav-home" aria-selected="true">
+                            Description
+                        </a>
 
-                            <a class="nav-link " id="nav-latest-tab" data-bs-toggle="tab" href="#nav-latest" role="tab"
-                                aria-controls="nav-profile" aria-selected="true">
-                                Reviews (2)
-                            </a>
+                        <a class="nav-link " id="nav-latest-tab" data-bs-toggle="tab" href="#nav-latest" role="tab"
+                            aria-controls="nav-profile" aria-selected="true">
+                            Reviews (2)
+                        </a>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- start tab Descritpion -->
+                        <div class="tab-pane fade show active" id="nav-featured" role="tabpanel"
+                            aria-labelledby="nav-featured-tab">
+                            <ol>
+                                <li>6.7-inch Super Retina XDR display with ProMotion for a faster, more responsive
+                                    feel</li>
+                                <li>Cinematic mode adds shallow depth of field and shifts focus automatically in
+                                    your videos</li>
+                                <li>Pro camera system with new 12MP Telephoto, Wide, and Ultra Wide cameras; LiDAR
+                                    Scanner;</li>
+                                <li>12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording</li>
+                                <li>A15 Bionic chip for lightning-fast performance</li>
+                            </ol>
                         </div>
-                        <div class="tab-content" id="nav-tabContent">
-                            <!-- start tab Descritpion -->
-                            <div class="tab-pane fade show active" id="nav-featured" role="tabpanel"
-                                aria-labelledby="nav-featured-tab">
-                                <ol>
-                                    <li>6.7-inch Super Retina XDR display with ProMotion for a faster, more responsive
-                                        feel</li>
-                                    <li>Cinematic mode adds shallow depth of field and shifts focus automatically in
-                                        your videos</li>
-                                    <li>Pro camera system with new 12MP Telephoto, Wide, and Ultra Wide cameras; LiDAR
-                                        Scanner;</li>
-                                    <li>12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording</li>
-                                    <li>A15 Bionic chip for lightning-fast performance</li>
-                                </ol>
-                            </div>
-                            <!--End tab Descritpion -->
+                        <!--End tab Descritpion -->
 
-                            <!--Start tab reveiew -->
-                            <div class="tab-pane fade" id="nav-latest" role="tabpanel" aria-labelledby="nav-latest-tab">
-                            </div>
-                            <!--End tab reveiew-->
+                        <!--Start tab reveiew -->
+                        <div class="tab-pane fade" id="nav-latest" role="tabpanel" aria-labelledby="nav-latest-tab">
+                            <ol>
+                                <li>6.7-inch Super Retina XDR display with ProMotion for a faster, more responsive
+                                    feel</li>
+                                <li>Cinematic mode adds shallow depth of field and shifts focus automatically in
+                                    your videos</li>
+                                <li>Pro camera system with new 12MP Telephoto, Wide, and Ultra Wide cameras; LiDAR
+                                    Scanner;</li>
+                                <li>12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording</li>
+                                <li>A15 Bionic chip for lightning-fast performance</li>
+                            </ol>
                         </div>
-                    </nav>
-                </div>
+                        <!--End tab reveiew-->
+                    </div>
+                </nav>
+                <!-- </div> -->
             </div>
 
 
