@@ -1611,6 +1611,8 @@ float: right !important;
     }
     .vertical-swiper .item{
         border:none;
+        max-width: 400px;
+        max-height: 400px;
     }
     .vertical-swiper .item:hover{
         border: none;
