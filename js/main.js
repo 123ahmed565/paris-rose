@@ -252,9 +252,16 @@ $(document).ready(function (){
     });
 });
 
-// this for show area when select city
+// this for show area when select city modal shipping
 $(document).on('change','.select-this',function(){
         document.getElementById("area-select").style.display = 'block';
+});
+
+
+// fuunction delete one box-cart in page cart
+$(document).on('click','.delete-this',function(){
+    var id=$(".delete-cart").attr('alt');
+    $('.delete-cart'+"."+id).remove();
 });
 
 // zoom product details
