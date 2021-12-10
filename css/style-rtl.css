@@ -3,7 +3,7 @@
 
 :root{
     --primary:#141424;
-    --colorText:#ECC96D;
+    --colorText:#f4bd24;
     /* --colorText:#b2841d ; */
     --secondary:#231f20;
     --far_bars:white;
@@ -116,7 +116,7 @@ p{
 .btn{
     border: none;
     background-color: var(--colorText);
-    color: white;
+    color: black;
     border-radius: 10px;
     padding: 10px 20px;
     white-space: nowrap;
@@ -411,7 +411,7 @@ input[type=submit]:hover {
     right: 60%;
     width: 19px;
     height: 19px;
-    line-height:3px;
+    line-height:7px;
     padding: 5px;
     border-radius: 50%;
     text-align: center;
@@ -427,7 +427,7 @@ input[type=submit]:hover {
     right: 50%;
     width: 19px;
     height: 19px;
-    line-height:3px;
+    line-height:7px;
     padding: 5px;
     border-radius: 50%;
     text-align: center;
@@ -589,13 +589,15 @@ input[type=submit]:hover {
 
 .item .content {
     display: none;
-    background-color: var(--colorText);
+    background-color: var(--primary);
 }
 
 .content ul li a{
-    font-weight: 800;
-    color: black;
-    margin: 10px;
+    font-weight: 500;
+    color: var(--colorText);
+    line-height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* for top head mobile */
@@ -825,10 +827,10 @@ font-weight: 600;
     opacity: 1;
     display: block;
     width: 100%;
-    height: 300px;
+    height: 390px;
     transition: .5s ease;
     backface-visibility: hidden;
-    object-fit: contain;
+    /* object-fit: cover; */
 }
 
 .box-shadow .middle {
@@ -901,10 +903,10 @@ font-weight: 600;
         opacity: 1;
         display: block;
         width: 100%;
-        height: 250px !important;
+        height: 335px !important;
         transition: .5s ease;
         backface-visibility: hidden;
-        object-fit: contain;
+        /* object-fit: contain; */
     }
     .button-cart-mobile{
         display: block;
@@ -952,7 +954,7 @@ font-size: 18px;
 }
 
 .best-price-box button{
-    color: white;
+    color: black;
     font-weight: 600;
     box-shadow: none !important;
 }
@@ -992,7 +994,7 @@ font-size: 18px;
 
 .recently-viewed .swiper-slide img {
     width: 100%;
-    height: 490px;
+    height: 579px;
     /* object-fit: contain; */
 }
 
@@ -1236,7 +1238,7 @@ color: #898989;
 }
 .bottom-appbar .tabs .fab {
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--colorText);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1655,7 +1657,7 @@ float: left !important;
     .vertical-swiper .swiper-slide img {
         display: block;
         width: 100%;
-        height: 300px;
+        height: 340px;
         /* object-fit: cover; */
     }
     .vertical-swiper .item{
@@ -1774,8 +1776,8 @@ float: left !important;
 }
 
 .list.list-view-filter .image{
-    width: 100%;
-    height: 370px;
+    width: 325px;
+    height: 353px;
     object-fit: cover;
 }
 
@@ -2091,6 +2093,11 @@ input[type="radio"]:checked {
     cursor: pointer;
 }
 
+.total-price{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #dad8d9;
+}
+
 @media (max-width:768px) {
     .cart-img{
         max-width: 200px;
@@ -2114,7 +2121,7 @@ input[type="radio"]:checked {
 
 /* start favourite */
 .favourite .list.grid-view-filter li {
-    width: calc(55% - 277px);
+    width: calc(55% - 279px);
     padding: 10px;
 }
 
@@ -2129,7 +2136,7 @@ input[type="radio"]:checked {
 }
 
 .favourite .list.list-view-filter .image{
-    width: 100%;
+    width: 440px;
     height: 490px;
     object-fit: cover;
 }

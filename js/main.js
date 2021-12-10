@@ -29,7 +29,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// swiper for brands
+// start swiper for brands
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 5.5,
     spaceBetween: 10,
@@ -51,6 +51,36 @@ var swiper = new Swiper(".mySwiper2", {
         1000: {
         slidesPerView: 5.5,
         spaceBetween: 5
+        },
+    }
+});
+
+// start swiper for most veiwed & related
+var swiper = new Swiper(".mySwiper5", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop:true,
+    freeMode: true,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints:{
+        0: {
+        slidesPerView: 1,
+        spaceBetween: 15 
+        },
+        600: {
+        slidesPerView: 3.5,
+        spaceBetween: 20
+        },
+        1000: {
+        slidesPerView: 3,
+        spaceBetween: 20
         },
     }
 });
@@ -85,6 +115,10 @@ $(".add-to-cart").click(function () {
 
 $(".add-to-heart").click(function () {
     toastr.success("Add To Wishlest");
+});
+
+$(".delete-this").click(function () {
+    toastr.success("Delete cart");
 });
 
 
