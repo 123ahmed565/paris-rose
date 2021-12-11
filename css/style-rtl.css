@@ -2142,8 +2142,8 @@ input[type="radio"]:checked {
 
 .favourite .list.list-view-filter .image{
     width: 440px;
-    height: 490px;
-    object-fit: cover;
+    height: 441px;
+    object-fit: contain;
 }
 
 @media (max-width: 768px){
