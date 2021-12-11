@@ -655,7 +655,7 @@ word-break: break-all;
 /* start carousal slider */
 .carousel-inner img{
     width: 100% !important;
-    height: 625px !important;
+    height: 600px !important;
 }
 
 .carousel-caption{
@@ -1782,8 +1782,8 @@ float: left !important;
 
 .list.list-view-filter .image{
     width: 325px;
-    height: 353px;
-    object-fit: cover;
+    height: 328px;
+    object-fit: contain;
 }
 
 .box-for-categories .image {
