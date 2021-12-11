@@ -1889,7 +1889,7 @@ float: left !important;
 .box-for-categories .icons-mobile{
     position: absolute;
     top: 3% !important;
-    right: 87%;
+    right: 82%;
 }
 .box-for-categories  .image {
     opacity: 1;
@@ -2132,7 +2132,7 @@ input[type="radio"]:checked {
 
 /* start favourite */
 .favourite .list.grid-view-filter li {
-    width: calc(55% - 280px);
+    width: calc(55% - 281px);
     padding: 10px;
 }
 
@@ -2169,4 +2169,18 @@ input[type="radio"]:checked {
     }
 }
 /* end favourite */
+
+/* start about us */
+.box-img-about{
+    max-width: 390px;
+    max-height: 500px;
+}
+
+.box-img-about img{
+    width: 100%;
+    height: 390px;
+    border-radius: 3px;
+    object-fit: contain;
+}
+/* end about us */
 
