@@ -223,7 +223,7 @@ input[type=submit]:hover {
 }
 
 .wrapper{
-    width: 100%;
+    width: 95%;
     margin: auto;
 }
 
@@ -778,15 +778,19 @@ font-size: 13px;
 font-weight: 600;
 }
 
-.offer-card img{
+.box-offer img{
     width: 100%;
-    height: 415px;
+    height: 412px;
+    object-fit: contain;
+    border-radius: 0;
 }
 
 @media (max-width:768px) {
-    .offer-card img{
+    .box-offer img{
         width: 100%;
-        height: 450px;
+        height: 335px;
+        object-fit: contain;
+        border-radius: 0;
     }
 }
 /* end offers */
@@ -970,7 +974,7 @@ font-size: 18px;
 /* start recently veiwed */
 .recently-viewed .swiper-slide img {
     width: 100%;
-    height: 600px;
+    height: 430px;
     object-fit: contain;
 }
 
