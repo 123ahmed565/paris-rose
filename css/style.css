@@ -1857,7 +1857,7 @@ font-size: 20px;
         }
         .box-for-categories .icons-mobile{
             position: absolute;
-            top: 0% !important;
+            top: 3% !important;
             left: 87%;
         }
         .box-for-categories  .image {
@@ -2136,7 +2136,7 @@ input[type="radio"]:checked {
     opacity: 1;
     display: block;
     width: 100%;
-    height: 350px !important;
+    height: 299px !important;
     transition: .5s ease;
     backface-visibility: hidden;
     object-fit: contain;
