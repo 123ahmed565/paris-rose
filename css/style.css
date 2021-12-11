@@ -223,13 +223,13 @@ input[type=submit]:hover {
 }
 
 .wrapper{
-    width: 94%;
+    width: 100%;
     margin: auto;
 }
 
 @media (max-width:768px) {
     .wrapper{
-        width: 98%;
+        width: 90%;
         margin: auto;
     }
 }
@@ -786,7 +786,7 @@ font-weight: 600;
 @media (max-width:768px) {
     .offer-card img{
         width: 100%;
-        height: 315px;
+        height: 450px;
     }
 }
 /* end offers */
@@ -1032,8 +1032,8 @@ color: #898989;
     }
     .recently-viewed  .swiper-slide img {
         width: 100%;
-        height: 312px;
-        object-fit: cover;
+        height: 335px;
+        object-fit: contain;
     }
 }
 /* end recently veiwed */
@@ -2139,6 +2139,10 @@ input[type="radio"]:checked {
 }
 
 /* end favourite */
+
+/* start contact us */
+
+/* end contact us */
 
 
 
