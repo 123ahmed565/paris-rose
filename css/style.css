@@ -743,6 +743,7 @@ font-size: 25px;
     .about img{
     width: 300px;
     height: 400px;
+    margin-top: 0 !important;
     }
 }
 /* end about */
@@ -1639,7 +1640,7 @@ float: right !important;
     }
     .vertical-swiper .item{
         border:none;
-        height: 303px;
+        height: 368px;
         width: 362px;
     }
     .vertical-swiper .item:hover{
