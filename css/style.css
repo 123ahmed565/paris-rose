@@ -2179,6 +2179,11 @@ font-weight: 500;
 .order-details .table-bg{
     background-color: #f0f2f7;
 }
+
+.shipment-track{
+    border: 1px solid #CED5E1;
+    padding: 15px;
+}
 /* end order-details */
 
 
