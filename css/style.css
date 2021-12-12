@@ -1849,7 +1849,7 @@ font-size: 20px;
         }
     
         .list.grid-view-filter li {
-            padding: 20px;
+            /* padding: 20px; */
             display: block; 
             width: 100% ;
         }
@@ -1870,7 +1870,7 @@ font-size: 20px;
             opacity: 1;
             display: block;
             width: 100%;
-            height: 298px !important;
+            height: 348px !important;
             transition: .5s ease;
             backface-visibility: hidden;
             object-fit: contain;
@@ -2096,7 +2096,7 @@ input[type="radio"]:checked {
     }
     .cart-img img{
         width: 100%;
-        height: 126px;
+        height: 146px;
         /* object-fit: cover; */
         border-radius: 5px;
         margin: auto;
@@ -2134,7 +2134,7 @@ input[type="radio"]:checked {
 
 @media (max-width: 768px){
 .favourite .list.grid-view-filter li {
-    padding: 20px;
+    /* padding: 20px; */
     display: block;
     width: 100%;
 }
@@ -2142,7 +2142,7 @@ input[type="radio"]:checked {
     opacity: 1;
     display: block;
     width: 100%;
-    height: 299px !important;
+    height: 348px !important;
     transition: .5s ease;
     backface-visibility: hidden;
     object-fit: contain;
@@ -2185,6 +2185,66 @@ font-weight: 500;
     padding: 15px;
 }
 /* end order-details */
+
+/* start page blog */
+.picture-blog{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.hover-one{
+    font-size: 21px;
+}
+
+.hover-one:hover{
+    color: var(--colorText);
+}
+
+.input-group{
+    margin-top: 20%;
+}
+
+.input-group-text{
+    background-color: white !important;
+}
+
+.categories  h5{
+    font-weight: 700;
+    line-height: 29px;
+    color: #303030;
+    font-size: 22px;
+}
+
+.categories  li{
+    list-style: none;
+    border-bottom: 1px solid rgb(221, 219, 219);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #707070;
+    padding: 10px;
+}
+
+.categories  li:hover{
+    color: var(--colorText);
+}
+
+.recents-news img{
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+@media (max-width:768px) {
+    .picture-blog {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    }
+}
+/* end page blog */
 
 
 
