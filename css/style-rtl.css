@@ -725,33 +725,78 @@ font-size: 25px;
 /* end carousal slider */
 
 
-/* start about */
-.about-image {
-    height: auto !important;
-    width: 100vw;
-    position: relative;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-image: url("../images/about-us/about-bg.png");
-}
-
-.about span{
+/* start about us */
+.about-us .make-color{
     color: var(--colorText);
 }
 
-.about p{
-    color: #c2bcbc;
-    line-height: 25px;
-    max-width: 700px;
-}
-@media (max-width:768px) {
-    .about img{
+.big-box-about{
+    background-color: #ced5e1;
+    padding: 30px 10px;
     width: 300px;
-    height: 400px;
-    margin-top: 0 !important;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.about-icon1{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background-color: var(--colorText);
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 62%;
+    right: 14%;
+    border-radius: 10%;
+}
+
+.about-icon2{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background-color: var(--colorText);
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 62%;
+    right: 47%;
+    border-radius: 10%;
+}
+
+.about-icon3{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background-color: var(--colorText);
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 62%;
+    right: 81%;
+    border-radius: 10%;
+}
+
+@media (max-width:768px) {
+    .about-icon1{
+        bottom: 87%;
+        right: 40%;
+    }
+    .about-icon2{
+        bottom: 54%;
+        right: 40%;
+    }
+    .about-icon3{
+        bottom: 21%;
+        right: 41%;
     }
 }
-/* end about */
+/* end about us */
 
 /* start offers */
 .offer-card{
