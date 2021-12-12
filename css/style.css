@@ -1037,7 +1037,7 @@ color: #898989;
     }
     .recently-viewed  .swiper-slide img {
         width: 100%;
-        height: 335px;
+        height: 371px;
         object-fit: contain;
     }
 }
@@ -2352,6 +2352,191 @@ cursor: pointer;
     }
 }
 /* end page profile */
+
+/* start page done */
+.done{
+    padding: 30px;
+    margin: auto;
+}
+
+.welcome-message{
+    background-color: var(--secondary);
+    padding: 20px;
+}
+
+.thanks{
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--colorText);
+}
+
+.number-order{
+    font-size: 20px;
+    color: var(--colorText);
+}
+
+.copy-link{
+    display: flex;
+}
+
+.copy-link p{
+    background-color: #F0F2F7;
+    color: black;
+    padding: 10px 20px;
+    white-space: nowrap;
+    margin-bottom: 0;
+    width: 70%;
+}
+
+.copy-link button{
+    width: 30%;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #CED5E1;
+    padding: 3px 9px;
+    white-space: nowrap;
+}
+
+.check-shipment{
+    background-color: var(--colorText);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.box-done-share-order img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.all-border-done{
+    border:1px solid #ced5e1
+}
+
+.tracking-order{
+    background-color: #F0F2F7;
+    padding: 20px;
+}
+
+.order-steps {
+    padding-bottom: 40px;
+    padding: 0 20px 20px;
+}
+
+.progress-steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.prog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    z-index: -1;
+    border: 1px dashed #CED5E1;
+    width: 100%;
+    background-color: transparent;
+}
+
+.my-progress {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.circle-yellow{
+width: 30px;
+height: 30px;
+background-color: var(--colorText);
+}
+
+.my-progress img {
+    width: 55px;
+    height: 55px;
+}
+.my-progress:last-of-type {
+    border: 2px solid #ddd;
+}
+.my-progress:last-of-type img {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+.my-progress:first-of-type img {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+.my-progress .order-placed {
+    position: absolute;
+    left: 0px;
+    margin-top: 10px;
+    text-align: center;
+}
+.my-progress .order-placed p {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.my-progress .order-placed span {
+    color: #898989;
+}
+.my-progress .arrive-placed {
+    position: absolute;
+    right: -10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.my-progress .arrive-placed p {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.my-progress .arrive-placed span {
+    color: #898989;
+}
+
+.last-order-check img{
+width: 130px;
+height: 130px;
+object-fit: contain;
+border-radius: 5px;
+}
+
+@media (max-width:768px) {
+    .done{
+        padding:10px !important;
+        margin: auto;
+    }
+
+    .thanks{
+    font-size: 25px;
+    }
+
+.number-order{
+    font-size: 17px;
+}
+.my-progress img {
+    width: 40px;
+    height: 40px;
+}
+}
+/* end page done */
 
 
 
