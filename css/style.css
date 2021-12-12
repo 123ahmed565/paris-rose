@@ -1599,11 +1599,6 @@ float: right !important;
     box-shadow: none !important;
 }
 
-.btn-pro-cart:hover{
-    background-color: white;
-    color: black;
-    transition: .6s all ease-in-out;
-}
 
 .btn-pro-heart{
     border: none;
