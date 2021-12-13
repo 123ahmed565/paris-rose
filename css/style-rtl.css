@@ -1229,7 +1229,7 @@ color: #898989;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 4000;
 }
 .bottom-appbar .tabs {
     display: flex;
@@ -2679,4 +2679,7 @@ font-weight: 700;
 }
 }
 /* end page order */
+
+
+
 
