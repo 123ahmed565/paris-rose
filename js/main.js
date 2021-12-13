@@ -304,14 +304,12 @@ $(document).on('click','.delete-this',function(){
 
 // function button remove all in page cart 
 $(document).on('click','.remove-button',function(){
-    var id=$(".box-cart").attr('alt');
-    $('.box-cart'+"."+id).remove();
+    $('.box-cart').remove();
 });
 
 // function button remove all in page order
 $(document).on('click','.remove-button',function(){
-    var id=$(".order-all").attr('alt');
-    $('.order-all'+"."+id).remove();
+    $('.order-all').remove();
 });
 
 // start login system effect class
