@@ -121,6 +121,10 @@ $(".delete-this").click(function () {
     toastr.success("Delete cart");
 });
 
+$(".remove-button").click(function () {
+    toastr.success("Remove All");
+});
+
 
 // start add active color to bottom menu mobile
 $(document).on('click','.active-color',function(){
@@ -296,6 +300,18 @@ $(document).on('change','.select-this',function(){
 $(document).on('click','.delete-this',function(){
     var id=$(".delete-cart").attr('alt');
     $('.delete-cart'+"."+id).remove();
+});
+
+// function button remove all in page cart 
+$(document).on('click','.remove-button',function(){
+    var id=$(".box-cart").attr('alt');
+    $('.box-cart'+"."+id).remove();
+});
+
+// function button remove all in page order
+$(document).on('click','.remove-button',function(){
+    var id=$(".order-all").attr('alt');
+    $('.order-all'+"."+id).remove();
 });
 
 // zoom product details

@@ -975,7 +975,7 @@ font-size: 18px;
 /* start recently veiwed */
 .recently-viewed .swiper-slide img {
     width: 100%;
-    height: 632px;
+    height: 634px;
     object-fit: contain;
 }
 
@@ -2632,6 +2632,50 @@ border-radius: 5px;
 }
 }
 /* end contact us */
+
+/* start page order */
+.order-all{
+    border:1px solid #ced5e1;
+    padding: 30px 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.order-all:hover{
+    background-color:#F0F2F7;
+    border: none;
+}
+
+.img-order img{
+    width: 150px;
+    height: 140px;
+}
+
+.order-review{
+    margin-left: 20px;
+}
+
+.order-price{
+color: var(--colorText);
+font-size: 18px;
+font-weight: 700;
+}
+
+@media (max-width:768px) {
+    .order-all{
+        border:1px solid #ced5e1;
+        padding: 6px 10px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .show-description{
+        display: block;
+    }
+    .img-order img{
+    width: 110px;
+    height: 104px;
+    margin-top: 25px;
+}
+}
+/* end page order */
 
 
 
