@@ -2111,6 +2111,29 @@ input[type="radio"]:checked {
     width: 100%;
 }
 
+.payment input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+.payment input[type="radio"]:checked {
+    background-color: var(--colorText);
+    border-radius: 50%;
+}
+
 @media (max-width:768px) {
     .payment{
         padding: 10px;
