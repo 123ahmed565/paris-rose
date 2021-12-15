@@ -874,6 +874,13 @@
     </script>
     <script src="./js/main.js"></script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+    <script>
+        function removeFocus() {
+        document.activeElement.blur();
+        }
+        document.body.addEventListener("touchstart", removeFocus);
+    </script>
 </body>
 
 </html>
