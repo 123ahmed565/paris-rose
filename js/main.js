@@ -312,6 +312,19 @@ $(document).on('click','.remove-button',function(){
     $('.order-all').remove();
 });
 
+// zoom product details
+var w = window.innerWidth;
+if (w > 991) {
+$("#outerzoom").imagezoomsl({
+    zoomrange: [0, 0],
+    classmagnifier: "outer-magnifier",
+    classcursorshade: "cursorshade",
+    classstatusdiv: "statusdiv",
+    classtextdn: "textdn",
+    classtracker: "outer-tracker",
+});
+}
+
 // start login system effect class
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
@@ -326,18 +339,8 @@ sign_in_btn.addEventListener("click", () => {
     formm.classList.remove("sign-up-mode");
 });
 
-// zoom product details
-var w = window.innerWidth;
-if (w > 991) {
-$("#outerzoom").imagezoomsl({
-    zoomrange: [0, 0],
-    classmagnifier: "outer-magnifier",
-    classcursorshade: "cursorshade",
-    classstatusdiv: "statusdiv",
-    classtextdn: "textdn",
-    classtracker: "outer-tracker",
-});
-}
+
+
 
 
 
