@@ -865,6 +865,22 @@
     </div>
     <!-- end bottom menu mobile -->
 
+    <!-- $("#myInputID").blur(); -->
+
+    <script>
+        var isAppleDevice = navigator.userAgent.match(/(iPod|iPhone|iPad)/) != null;
+
+        var inputs = jQuery("input");
+        if ( isAppleDevice ){
+                $(document).on('touchstart','body', function (evt) {
+                    var targetTouches = event.targetTouches;
+                    if ( !inputs.is(targetTouches)){
+                        inputs.context.activeElement.blur();
+                    }
+                });
+            }
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
@@ -875,12 +891,6 @@
     <script src="./js/main.js"></script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
 
-    <script>
-        function removeFocus() {
-        document.activeElement.blur();
-        }
-        document.body.addEventListener("touchstart", removeFocus);
-    </script>
 </body>
 
 </html>

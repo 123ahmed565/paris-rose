@@ -2346,8 +2346,8 @@ font-weight: 500;
 /* start page blog */
 .picture-blog-grid{
     width: 100%;
-    height: 419px;
-    object-fit: contain;
+    height: 325px;
+    /* object-fit: contain; */
     border-radius: 5px;
 }
 
