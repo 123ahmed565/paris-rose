@@ -317,7 +317,17 @@ $(document).on('click','.remove-button',function(){
     $('.order-all').remove();
 });
 
+// start login system effect class  
+var formm=$('.formm');
+formm.remove('.sign-up-mode');
 
+$(document).on('click','#sign-up-btn',function(){
+    formm.addClass('sign-up-mode');
+});
+
+$(document).on('click','#sign-in-btn',function(){
+    formm.removeClass('sign-up-mode');
+});
 
 // zoom product details
 var w = window.innerWidth;
@@ -331,20 +341,6 @@ $("#outerzoom").imagezoomsl({
     classtracker: "outer-tracker",
 });
 }
-
-// start login system effect class  
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-
-const formm = document.querySelector(".formm");
-formm.classList.remove("sign-up-mode");
-sign_up_btn.addEventListener("click", () => {
-    formm.classList.add("sign-up-mode");
-});
-
-sign_in_btn.addEventListener("click", () => {
-    formm.classList.remove("sign-up-mode");
-});
 
 
 
