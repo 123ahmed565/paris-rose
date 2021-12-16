@@ -1235,7 +1235,7 @@ color: #898989;
 .bottom-appbar .badge-cart{
     position: absolute;
     bottom: 55%;
-    left: 31%;
+    left: 53%;
     width: 19px;
     height: 19px;
     line-height:7px;
@@ -1251,7 +1251,7 @@ color: #898989;
 .bottom-appbar .badge-heart{
     position: absolute;
     bottom:55%;
-    left: 70%;
+    left: 52%;
     width: 19px;
     height: 19px;
     line-height:7px;
