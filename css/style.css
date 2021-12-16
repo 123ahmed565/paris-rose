@@ -521,6 +521,9 @@ input[type=submit]:hover {
     .text-pc{
         display: none;
     }
+    .social-show{
+        margin-bottom: 60px;
+    }
 }
 
 .offcanvas {
