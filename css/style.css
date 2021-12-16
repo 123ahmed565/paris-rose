@@ -340,11 +340,6 @@ input[type=submit]:hover {
 /* end top button */
 
 /* start top head */
-@media (max-width:768px) {
-    .top-head{
-        display: none;
-    }
-}
 .top-head{
     background-image: url("../images/top-head/Group\ 4284.png");
     background-position: 50% 50%;
@@ -472,10 +467,14 @@ input[type=submit]:hover {
     border-radius: 50%;
     
 }
+@media (max-width:768px) {
+    .top-head{
+        display: none;
+    }
+}
 /* end top head */
 
 /* start header canavs */
-
 @media (min-width:768px) {
     .fa-bars{
         display: none;
@@ -489,6 +488,13 @@ input[type=submit]:hover {
     .icon-mobile{
         display: none;
     }
+    .navbar-expand-sm .navbar-nav .nav-link{
+        color: white;
+        white-space: nowrap;
+    }
+    .text-pc{
+        display: block;
+    }
 }
 
 .fa-bars{
@@ -498,16 +504,6 @@ input[type=submit]:hover {
 
 .navbar{
     background-color: var(--colorText) !important;
-}
-
-@media (min-width:768px) {
-    .navbar-expand-sm .navbar-nav .nav-link{
-        color: white;
-        white-space: nowrap;
-    }
-    .text-pc{
-        display: block;
-    }
 }
 
 @media (max-width:768px) {
@@ -2806,7 +2802,7 @@ form.sign-in-form {
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0;
+    top: -180px;
     left: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2904,6 +2900,34 @@ form.sign-in-form {
     pointer-events: all;
 }
 
+.btn-facebook{
+    font-size: 19px;
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #097eeb;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-google{
+    font-size: 19px;
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #ea4335;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.for-login{
+    margin-top: -45px;
+}
+
 
 @media (max-width: 870px) {
     .formm {
@@ -2918,7 +2942,7 @@ form.sign-in-form {
     }
 
     .for-login{
-        margin-top: 200px;
+        margin-top: 230px;
     }
 
     .signin-signup,
@@ -3014,10 +3038,13 @@ form.sign-in-form {
     .edite-sign-up{
         margin-top: -53px !important;
     }
+    .panels-container {
+        top: 0px;
+    }
 }
 
 @media (max-width: 570px) {
-    form {
+    .sign-in-form,.sign-up-form {
         padding: 0 1.5rem;
     }
 

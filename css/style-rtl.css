@@ -492,6 +492,13 @@ input[type=submit]:hover {
     .icon-mobile{
         display: none;
     }
+    .navbar-expand-sm .navbar-nav .nav-link{
+        color: white;
+        white-space: nowrap;
+    }
+    .text-pc{
+        display: block;
+    }
 }
 
 .fa-bars{
@@ -502,16 +509,6 @@ input[type=submit]:hover {
 
 .navbar{
     background-color: var(--colorText) !important;
-}
-
-@media (min-width:768px) {
-    .navbar-expand-sm .navbar-nav .nav-link{
-        color: white;
-        white-space: nowrap;
-    }
-    .text-pc{
-        display: block;
-    }
 }
 
 @media (max-width:768px) {
