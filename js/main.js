@@ -313,17 +313,17 @@ $(document).on('click','.remove-button',function(){
 });
 
 // zoom product details
-var w = window.innerWidth;
-if (w > 991) {
-$("#outerzoom").imagezoomsl({
-    zoomrange: [0, 0],
-    classmagnifier: "outer-magnifier",
-    classcursorshade: "cursorshade",
-    classstatusdiv: "statusdiv",
-    classtextdn: "textdn",
-    classtracker: "outer-tracker",
-});
-}
+// var w = window.innerWidth;
+// if (w > 991) {
+// $("#outerzoom").imagezoomsl({
+//     zoomrange: [0, 0],
+//     classmagnifier: "outer-magnifier",
+//     classcursorshade: "cursorshade",
+//     classstatusdiv: "statusdiv",
+//     classtextdn: "textdn",
+//     classtracker: "outer-tracker",
+// });
+// }
 
 // start login system effect class
 const sign_in_btn = document.querySelector("#sign-in-btn");
