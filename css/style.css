@@ -1200,7 +1200,8 @@ color: #898989;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     background-color: transparent;
-    box-shadow: 0px 30px 0px 25px black;
+    /* box-shadow: 0px 30px 0px 25px black; */
+    box-shadow: 5px 19px 2px 13px black;
     border-bottom: 1px solid rgba(167, 161, 161, 0.69);
     display: flex;
 }
@@ -1209,7 +1210,7 @@ color: #898989;
     color: white;
 }
 .bottom-appbar .tabs .tab i {
-    font-size: 17px;
+    font-size: 21px;
     padding: 3px;
 }
 .bottom-appbar .tabs .tab.is-active {
@@ -1233,8 +1234,8 @@ color: #898989;
 
 .bottom-appbar .badge-cart{
     position: absolute;
-    bottom: 70%;
-    left: 33%;
+    bottom: 55%;
+    left: 31%;
     width: 19px;
     height: 19px;
     line-height:7px;
@@ -1242,15 +1243,15 @@ color: #898989;
     padding: 5px;
     border-radius: 50%;
     text-align: center;
-    background-color: white;
+    background-color: #f4bd24;
     color: black !important;
     font-size: 13px;
 }
 
 .bottom-appbar .badge-heart{
     position: absolute;
-    bottom:70%;
-    left: 68%;
+    bottom:55%;
+    left: 70%;
     width: 19px;
     height: 19px;
     line-height:7px;
@@ -1258,7 +1259,7 @@ color: #898989;
     padding: 5px;
     border-radius: 50%;
     text-align: center;
-    background-color: white;
+    background-color: #f4bd24;
     color: black !important;
     font-size: 13px;
 }
@@ -2246,6 +2247,9 @@ input[type="radio"]:checked {
     .about-icon3{
         bottom: 21%;
         left: 41%;
+    }
+    .big-box-about{
+        width: 100%;
     }
 }
 /* end about us */

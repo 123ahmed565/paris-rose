@@ -2,7 +2,7 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 30,
-    loop:true,
+    loop:false,
     freeMode: true,
     pagination: {
     el: ".swiper-pagination",
@@ -28,13 +28,12 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-
 // start swiper for brands
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 5.5,
     spaceBetween: 10,
     freeMode: true,
-    loop:true,
+    loop:false,
     pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -59,7 +58,7 @@ var swiper = new Swiper(".mySwiper2", {
 var swiper = new Swiper(".mySwiper5", {
     slidesPerView: 3,
     spaceBetween: 30,
-    loop:true,
+    loop:false,
     freeMode: true,
     pagination: {
     el: ".swiper-pagination",
@@ -199,6 +198,8 @@ window.onload = function () {
 };
 
 
+
+
 // collapse canvas boddy mobile
 $(".content").css("display", "block");
 $(".item-header:first,.icon:first").toggleClass("active");
@@ -214,7 +215,7 @@ var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 3,
     spaceBetween: 30,
     // freeMode: true,
-    loop:true,
+    loop:false,
     direction: 'vertical',
     pagination: {
     el: ".swiper-pagination",
@@ -316,20 +317,22 @@ $(document).on('click','.remove-button',function(){
     $('.order-all').remove();
 });
 
-// zoom product details
-// var w = window.innerWidth;
-// if (w > 991) {
-// $("#outerzoom").imagezoomsl({
-//     zoomrange: [0, 0],
-//     classmagnifier: "outer-magnifier",
-//     classcursorshade: "cursorshade",
-//     classstatusdiv: "statusdiv",
-//     classtextdn: "textdn",
-//     classtracker: "outer-tracker",
-// });
-// }
 
-// start login system effect class
+
+// zoom product details
+var w = window.innerWidth;
+if (w > 991) {
+$("#outerzoom").imagezoomsl({
+    zoomrange: [0, 0],
+    classmagnifier: "outer-magnifier",
+    classcursorshade: "cursorshade",
+    classstatusdiv: "statusdiv",
+    classtextdn: "textdn",
+    classtracker: "outer-tracker",
+});
+}
+
+// start login system effect class  
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 
