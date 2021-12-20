@@ -329,6 +329,12 @@ $(document).on('click','#sign-in-btn',function(){
     formm.removeClass('sign-up-mode');
 });
 
+
+// quick view product details
+$(document).bind('click','.quick-veiw',function(){
+    $('#exampleModal-2').modal('toggle');
+});
+
 // zoom product details
 var w = window.innerWidth;
 if (w > 991) {

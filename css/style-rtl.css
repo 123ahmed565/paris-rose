@@ -851,6 +851,9 @@ font-weight: 600;
 
 
 /* start nav tab */
+.nav-tabs {
+    inline-size: max-content !important;
+}
 .tab-content {
     padding: 20px;
     border-top: 1px solid #F0F2F7;
@@ -890,7 +893,7 @@ font-weight: 600;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 17%;
+    top: 11%;
     left: 10%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
