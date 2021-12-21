@@ -330,10 +330,41 @@ $(document).on('click','#sign-in-btn',function(){
 });
 
 
-// quick view product details
-$(document).bind('click','.quick-veiw',function(){
-    $('#exampleModal-2').modal('toggle');
+// change two class  between icon heart
+$(document).ready(function(){
+    $(document).on('click','.change-between',function(){
+        if($(this).hasClass('far')){
+            $(this).removeClass('far');
+            $(this).addClass('fas');
+        }
+        else{
+            $(this).removeClass('fas');
+            $(this).addClass('far');
+        }
+    });
 });
+
+
+// quick view product details
+// $(document).on('click','.quick-veiw',function(){
+//     $('#exampleModal-2').modal('show');
+// });
+
+// $(document).on('mouseover',function(){
+//     $('#exampleModal-2').modal('hide');
+//     var w = window.innerWidth;
+//     if (w > 991) {
+//     $("#outerzoom").imagezoomsl({
+//     zoomrange: [0, 0],
+//     classmagnifier: "outer-magnifier",
+//     classcursorshade: "cursorshade",
+//     classstatusdiv: "statusdiv",
+//     classtextdn: "textdn",
+//     classtracker: "outer-tracker",
+//     });
+//     }
+// });
+
 
 // zoom product details
 var w = window.innerWidth;
@@ -347,7 +378,6 @@ $("#outerzoom").imagezoomsl({
     classtracker: "outer-tracker",
 });
 }
-
 
 
 
