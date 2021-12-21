@@ -350,22 +350,6 @@ $(document).ready(function(){
 //     $('#exampleModal-2').modal('show');
 // });
 
-// $(document).on('mouseover',function(){
-//     $('#exampleModal-2').modal('hide');
-//     var w = window.innerWidth;
-//     if (w > 991) {
-//     $("#outerzoom").imagezoomsl({
-//     zoomrange: [0, 0],
-//     classmagnifier: "outer-magnifier",
-//     classcursorshade: "cursorshade",
-//     classstatusdiv: "statusdiv",
-//     classtextdn: "textdn",
-//     classtracker: "outer-tracker",
-//     });
-//     }
-// });
-
-
 // zoom product details
 var w = window.innerWidth;
 if (w > 991) {
