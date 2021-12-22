@@ -345,8 +345,27 @@ $(document).ready(function(){
 });
 
 
+// $(document).mouseover('#outerzoom',function(){
+// var w = window.innerWidth;
+// if (w > 991) {
+// $("#outerzoom").imagezoomsl({
+//     zoomrange: [0, 0],
+//     classmagnifier: "outer-magnifier",
+//     classcursorshade: "cursorshade",
+//     classstatusdiv: "statusdiv",
+//     classtextdn: "textdn",
+//     classtracker: "outer-tracker",
+// });
+// }
+// });
+
+// $(document).click('.quick-veiw',function(){
+//     $('#exampleModal-2').modal('show');
+//     });
+
+
 // quick view product details
-// $(document).on('click','.quick-veiw',function(){
+// $('.quick-veiw').click(function(){
 //     $('#exampleModal-2').modal('show');
 // });
 

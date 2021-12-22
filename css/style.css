@@ -1039,7 +1039,7 @@ color: #898989;
     }
     .recently-viewed  .swiper-slide img {
         width: 100%;
-        height: 360px;
+        height: 320px;
         /* object-fit: contain; */
     }
 }
@@ -1070,6 +1070,15 @@ color: #898989;
     width: 110px;
     height: 110px;
     object-fit: contain;
+}
+
+@media (max-width:768px) {
+    .Brands .swiper-slide img {
+        display: block;
+        width: 93px;
+        height: 85px;
+        object-fit: contain;
+    }
 }
 /* end brands */
 
