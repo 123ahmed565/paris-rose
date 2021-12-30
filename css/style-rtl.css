@@ -1920,7 +1920,7 @@ float: left !important;
 
 .list.list-view-filter .box-for-categories .middle{
         position: absolute;
-        left: 86%;
+        right: 86%;
         top: 49%;
 }
 
