@@ -345,33 +345,33 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-$('.add-to-cart').click(function(){
-$('.box-canvas-cart').append(
-    `         
-    <div class="row">
-        <div class="col-6">
-            <img src="./images/offers/offer-1.png" alt="image product" loading="lazy">
-        </div>
-        <div class="col-6">
-            <p class="m-0 p-0 text-dark">Excellence Black Edition 128 GB / 13 Pro</p>
-            <p class="mt-2 mb-2 text-dark">2,222,00 EGP</p>
-            <a style="cursor: pointer;">
-                <p class="text-decoration-underline deleted">Remove</p>
-            </a>
-        </div>
-    </div>
-    <form action="#">
-        <div class="input-group mb-1">
-            <button class="m-2 mt-1 button-add" type="button" id="button-addon2">+</button>
-            <input type="number" class="form-control quantity  text-center" min="1" step="1" max="10"
-                value="1" aria-label="count number" aria-describedby="button-addon2">
-            <button class="m-2 mt-1 button-minuse" type="button" id="button-addon">-</button>
-        </div>
-    </form>`
-);
-});
-});
+// $(document).ready(function(){
+// $('.add-to-cart').click(function(){
+// $('.box-canvas-cart').append(
+//     `         
+//     <div class="row">
+//         <div class="col-6">
+//             <img src="./images/offers/offer-1.png" alt="image product" loading="lazy">
+//         </div>
+//         <div class="col-6">
+//             <p class="m-0 p-0 text-dark">Excellence Black Edition 128 GB / 13 Pro</p>
+//             <p class="mt-2 mb-2 text-dark">2,222,00 EGP</p>
+//             <a style="cursor: pointer;">
+//                 <p class="text-decoration-underline deleted">Remove</p>
+//             </a>
+//         </div>
+//     </div>
+//     <form action="#">
+//         <div class="input-group mb-1">
+//             <button class="m-2 mt-1 button-add" type="button" id="button-addon2">+</button>
+//             <input type="number" class="form-control quantity  text-center" min="1" step="1" max="10"
+//                 value="1" aria-label="count number" aria-describedby="button-addon2">
+//             <button class="m-2 mt-1 button-minuse" type="button" id="button-addon">-</button>
+//         </div>
+//     </form>`
+// );
+// });
+// });
 
 // zoom product details
 var w = window.innerWidth;
