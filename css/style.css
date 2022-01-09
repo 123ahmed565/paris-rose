@@ -151,13 +151,13 @@ i{
 
 input[type=text], input[type=email],input[type=number],input[type=password],input[type=date], select, textarea {
     width: 100%;
-    padding: 7px;
+    padding: 10px;
     border: 1px solid #CED5E1; 
     font-size: 14px;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     resize: vertical;
     /* border-top-style: hidden;
     border-right-style: hidden;
